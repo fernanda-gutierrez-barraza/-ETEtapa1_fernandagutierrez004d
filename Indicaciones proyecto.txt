@@ -6,5 +6,9 @@ SQL
 usuario sql: c##prueba4
 contraseña: prueba4
 
+create user c##prueba4 IDENTIFIED by prueba4;
+grant connect, RESOURCE to c##prueba4;
+alter user c##prueba4 default TABLESPACE users quota UNLIMITED on users;
+
 ------------------------
 http://127.0.0.1:8000/
